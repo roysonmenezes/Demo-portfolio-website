@@ -15,12 +15,13 @@ body{
 }
 
 header{
-    position: fixed;
+
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     padding: 20px 10%;
-    
+    align-self: center;
+    position:relative;
     background-image: transparent;
     display: flex;
     justify-content: space-between;
@@ -34,6 +35,9 @@ header{
     text-decoration: none;
     font-weight: 600;
     cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards ;
+    
     
     
 
@@ -44,6 +48,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    transition: .3s;
     
 }
 .navbar a:hover,
@@ -63,10 +68,65 @@ header{
 }
 .home-content{
     max-width: 600px;
-
-
-
 }
+.home-content h3{
+    font-size: 37px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-content p{
+    font-size: 18px;
+}
+.home-content h3 span{
+    color: #0ef;
+}
+
 .home-img img{
     max-width: 450px;
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #0ef;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+/*KEYFRAME animation*/
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
 }
