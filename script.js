@@ -5,11 +5,15 @@ var typed=new Typed(".multiple-text",{
     backDelay:100,
     loop:true
 });
+// javascript part is remaining i will it do after completing a basic course on javascript.
+/*
 let sections=document.querySelectorAll('section');
 let navlinks=document.querySelectorAll('header nav a');
 
 window.onscroll=()=>{
     sections.forEach(sec=>{
-        let top
+        let top=window.scrollY;
+        let offset
     })
 };
+*/
